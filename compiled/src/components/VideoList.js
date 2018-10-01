@@ -1,0 +1,22 @@
+"use strict";
+
+var VideoList = function VideoList(props) {
+  return React.createElement(
+    "div",
+    { className: "video-list" },
+    props.videos && props.videos.length ? props.videos.map(function (video, index) {
+      return React.createElement(VideoListEntry, { key: index, video: video, onVideoClick: props.onVideoClick });
+    }) : React.createElement(
+      "div",
+      null,
+      "Loading video list"
+    )
+  );
+};
+
+VideoList.propTypes = {
+  videos: React.PropTypes.array.isRequired
+};
+
+window.VideoList = VideoList;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9jb21wb25lbnRzL1ZpZGVvTGlzdC5qc3giXSwibmFtZXMiOlsiVmlkZW9MaXN0IiwicHJvcHMiLCJ2aWRlb3MiLCJsZW5ndGgiLCJtYXAiLCJ2aWRlbyIsImluZGV4Iiwib25WaWRlb0NsaWNrIiwicHJvcFR5cGVzIiwiUmVhY3QiLCJQcm9wVHlwZXMiLCJhcnJheSIsImlzUmVxdWlyZWQiLCJ3aW5kb3ciXSwibWFwcGluZ3MiOiI7O0FBQUEsSUFBSUEsWUFBWSxTQUFaQSxTQUFZLENBQUNDLEtBQUQ7QUFBQSxTQUNkO0FBQUE7QUFBQSxNQUFLLFdBQVUsWUFBZjtBQUNJQSxVQUFNQyxNQUFOLElBQWdCRCxNQUFNQyxNQUFOLENBQWFDLE1BQTlCLEdBQXdDRixNQUFNQyxNQUFOLENBQWFFLEdBQWIsQ0FBaUIsVUFBQ0MsS0FBRCxFQUFRQyxLQUFSO0FBQUEsYUFDeEQsb0JBQUMsY0FBRCxJQUFnQixLQUFLQSxLQUFyQixFQUE0QixPQUFPRCxLQUFuQyxFQUEwQyxjQUFjSixNQUFNTSxZQUE5RCxHQUR3RDtBQUFBLEtBQWpCLENBQXhDLEdBRUc7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUhOLEdBRGM7QUFBQSxDQUFoQjs7QUFTQVAsVUFBVVEsU0FBVixHQUFzQjtBQUNwQk4sVUFBUU8sTUFBTUMsU0FBTixDQUFnQkMsS0FBaEIsQ0FBc0JDO0FBRFYsQ0FBdEI7O0FBSUFDLE9BQU9iLFNBQVAsR0FBbUJBLFNBQW5CIiwiZmlsZSI6IlZpZGVvTGlzdC5qcyIsInNvdXJjZXNDb250ZW50IjpbInZhciBWaWRlb0xpc3QgPSAocHJvcHMpID0+KFxuICA8ZGl2IGNsYXNzTmFtZT1cInZpZGVvLWxpc3RcIj5cbiAgICB7KHByb3BzLnZpZGVvcyAmJiBwcm9wcy52aWRlb3MubGVuZ3RoKSA/IHByb3BzLnZpZGVvcy5tYXAoKHZpZGVvLCBpbmRleCkgPT4gXG4gICAgICA8VmlkZW9MaXN0RW50cnkga2V5PXtpbmRleH0gdmlkZW89e3ZpZGVvfSBvblZpZGVvQ2xpY2s9e3Byb3BzLm9uVmlkZW9DbGlja30gLz4pXG4gICAgICA6IDxkaXY+TG9hZGluZyB2aWRlbyBsaXN0PC9kaXY+XG4gICAgfVxuICA8L2Rpdj5cbik7XG5cblZpZGVvTGlzdC5wcm9wVHlwZXMgPSB7XG4gIHZpZGVvczogUmVhY3QuUHJvcFR5cGVzLmFycmF5LmlzUmVxdWlyZWRcbn07XG5cbndpbmRvdy5WaWRlb0xpc3QgPSBWaWRlb0xpc3Q7XG4iXX0=

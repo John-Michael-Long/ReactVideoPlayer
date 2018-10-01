@@ -1,0 +1,37 @@
+{
+  "name": "reactvideoplayer",
+  "version": "1.0.0",
+  "description": "YouTube Video Player made with React",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/John-Michael-Long/ReactVideoPlayer.git"
+  },
+  "author": "JM Long",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/John-Michael-Long/ReactVideoPlayer/issues"
+  },
+  "homepage": "https://github.com/John-Michael-Long/ReactVideoPlayer#readme",
+  "scripts": {
+    "test": "live-server --open=./SpecRunner.html --port=8081",
+    "postinstall": "curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash",
+    "start": "npm install -g babel-cli live-server",
+    "babel-watch": "babel . --out-dir compiled --presets=env,react --ignore=node_modules,compiled --source-maps inline --watch"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.2",
+    "jquery": "^2.2.1",
+    "lodash": "^4.6.1",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.5.0",
+    "chai": "^3.5.0",
+    "mocha": "2.3.3",
+    "sinon": "1.17.3"
+  }
+}
